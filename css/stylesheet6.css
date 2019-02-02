@@ -1,0 +1,289 @@
+div#profil {
+
+  height: calc(100vh - 70px);
+  
+  box-sizing: border-box;
+  padding-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#profil-oben {
+  
+  height: 150px;
+  min-height: 150px;
+  width: 70%;
+  max-width: 600px;
+  background-color: white;
+
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+
+  box-sizing: border-box;
+  padding: 10px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+div#profil-oben-links {
+
+  height: 100%;
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+div#profil-oben-links-info {
+
+  display: flex;
+}
+
+div#profil-oben-links-bild {
+  
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+
+  background-color: white;
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+div#profil-oben-links-bild > img {
+
+  height: 100px;
+  width: auto;
+}
+
+div#profil-oben-links-daten {
+  
+  margin-left: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profil-oben-links-daten-text {
+
+  white-space: nowrap;
+}
+
+div#profil-oben-links-login {
+  
+  margin-top: 10px;
+}
+
+div#profil-oben-links-login > p {
+  
+  margin: 0px;
+  padding: 0px;
+
+  color: gray;
+  font-size: 14px;
+
+  white-space: nowrap;
+}
+
+div#profil-oben-rechts {
+
+  display: flex;
+  align-items: flex-end;
+}
+
+img#profil-oben-rechts-icon {
+
+  height: 100px;
+}
+
+div#profil-unten {
+   
+  flex: 1;
+  width: 70%;
+  max-width: 600px;
+  
+  margin-top: 30px;
+
+  display: block;
+}
+
+div#profil-unten-tabs {
+  
+  height: 40px;
+  
+  transform: translate(0px, 2px);
+
+  display: flex;
+}
+
+button#profil-unten-tabs-2 {
+  
+  margin-left: 10px;
+}
+
+.profil-unten-tabs-aktiv {
+  
+  background-color: white;
+
+  border: 1px solid #B1B1B1;
+  border-radius: 3px 3px 0px 0px;
+  border-bottom-style: none;
+}
+
+.profil-unten-tabs-passiv {
+  
+  background-color: #E9EEEE;
+
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+
+  margin-bottom: 5px;
+}
+
+div#profil-unten-inhalt {
+  
+  flex: 1;
+  min-height: calc(100% - 40px);
+  background-color: white;
+
+  border: 1px solid #B1B1B1;
+  border-radius: 0px 3px 0px 0px;
+
+  box-sizing: border-box;
+  padding-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profil-unten-inhalt-status {
+  
+  min-height: 100px;
+  width: 80%;
+  max-width:450px;
+  background-color: #CBD2D6;
+  
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+  
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.profil-unten-inhalt-status > textarea {
+  
+  height: 100px;
+  width: 100%;
+  
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+  
+  box-sizing: border-box;
+  overflow: auto;
+
+  resize: none;
+}
+
+.profil-unten-inhalt-status > p {
+  
+  margin: 0px;
+  padding: 0px;
+
+  margin-top: 5px;
+
+  color: gray;
+  font-size: 14px;
+}
+
+.profil-unten-inhalt-freund {
+  
+  min-height: 70px;
+  width: 80%;
+  max-width:450px;
+  background-color: #CBD2D6;
+  
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+  
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 5px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.profil-unten-inhalt-freund-bild {
+
+  height: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  
+  background-color: white;
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+.profil-unten-inhalt-freund-bild-bild {
+
+  height: 60px;
+  width: auto;
+}
+
+.profil-unten-inhalt-freund-daten {
+  
+  width: 100%;
+  min-width: 150px;
+
+  margin-left: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profil-unten-inhalt-freund-daten-text {
+
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.profil-unten-inhalt-freund-daten-text > a {
+
+  text-decoration: none;
+  color: black;
+}
+
+.profil-unten-inhalt-freund-daten-login {
+
+  white-space: nowrap;
+  color: gray;
+  font-size: 14px;
+}
+
+.profil-unten-inhalt-freund-icon {
+
+  height: 60px;
+  width: auto;
+}

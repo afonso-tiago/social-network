@@ -1,0 +1,288 @@
+div#einstellungen
+{
+  height: calc(100% - 70px);
+  
+  box-sizing: border-box;
+  padding-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#einstellungen-ueberschrift
+{
+  background-color: #2b3e50;
+  height: 40px;
+  width: 60%;
+  max-width: 600px;
+  
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+   
+  color: white;
+  font-size: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#einstellungen-ueberschrift > h1
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+form#einstellungen-inhalt
+{
+  background-color: #2b3e50;
+  height: 85%;
+  width: 60%;
+  max-width: 600px;
+  overflow: hidden;
+
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+  
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div#einstellungen-inhalt-daten
+{ 
+  height: 90%;
+  background-color: #CDD4D8;
+  overflow: auto;
+
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+  
+  box-sizing: border-box;
+  padding-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.einstellungen-inhalt-daten-input {
+  
+  height: 30px;
+  width: 75%;
+  box-sizing: border-box;
+
+  border: none;
+  border-radius: 3px;
+
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+div#einstellungen-inhalt-daten-oben
+{ 
+  height: 60%;
+  min-height: 200px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+div#einstellungen-inhalt-daten-oben-rechts
+{
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#einstellungen-inhalt-daten-oben-rechts > p
+{
+  color: #404040;
+  white-space: nowrap;
+  margin-top: 0px;
+}
+
+div#einstellungen-inhalt-daten-oben-links
+{ 
+  height: 100%;
+  width: 50%;
+  
+  margin-left: 5%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#einstellungen-inhalt-daten-oben-links > p
+{
+  color: #404040;
+  white-space: nowrap;
+  margin-top: 0px;
+}
+
+div#einstellungen-inhalt-daten-geburtstag
+{ 
+  width: 75%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.einstellungen-inhalt-daten-geburtstag-input
+{ 
+  height: 30px;
+  width: 25%;
+  box-sizing: border-box;
+
+  border: none;
+  border-radius: 3px;
+
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+div#einstellungen-inhalt-daten-unten
+{ 
+  height: 40%;
+  min-height: 150px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+div#einstellungen-inhalt-daten-unten-bild {
+
+  height: 120px;
+  min-width: 120px;
+  max-width: 120px;
+  
+  background-color: white;
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+div#einstellungen-inhalt-daten-unten-bild > img
+{ 
+  height: 120px;
+  width: auto;
+}
+
+div#einstellungen-inhalt-daten-unten-info
+{ 
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+div#einstellungen-inhalt-daten-unten-info > p
+{ 
+  color: #404040;
+  white-space: nowrap;
+  margin-top: 0px;
+}
+
+input#einstellungen-inhalt-daten-url
+{
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+
+  border: none;
+  border-radius: 3px;
+
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+button#einstellungen-inhalt-daten-durchsuchen
+{
+  align-self: flex-end;
+  height: 30px;
+
+  border: 1px solid #a2a2a2;
+  background-color: #cecece;
+}
+
+button#einstellungen-inhalt-daten-durchsuchen:hover
+{
+  border: 1px solid #969696;
+  background-color: #bdbdbd;
+}
+
+div#einstellungen-inhalt-optionen
+{
+  height: 40px;
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button#einstellungen-inhalt-optionen-ja
+{
+  height: 80%;
+  width: 100px;
+  border-radius: 2px;	
+  background-color: #1C8ADB;
+  border: none;
+  color: #ffffff;
+
+  box-shadow: 0 5px #115383;
+
+  margin-right: 10px;
+}
+
+button#einstellungen-inhalt-optionen-ja:hover
+{
+	background-color: #1573b7;
+}
+
+button#einstellungen-inhalt-optionen-ja:active
+{
+	transform: translateY(2px);
+	box-shadow: 0 3px #115383;
+}
+
+input#einstellungen-inhalt-optionen-nein
+{
+  height: 80%;
+  width: 100px;
+  border-radius: 2px;	
+  background-color: #A5A5A5;
+  border: none;
+  color: #ffffff;
+
+  box-shadow: 0 5px #6d6d6d;
+
+  margin-right: 10px;
+}
+
+input#einstellungen-inhalt-optionen-nein:hover
+{
+	background-color: #8c8c8c;
+}
+
+input#einstellungen-inhalt-optionen-nein:active
+{
+	transform: translateY(2px);
+	box-shadow: 0 3px #6d6d6d;
+}

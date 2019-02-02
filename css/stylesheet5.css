@@ -1,0 +1,107 @@
+div#suche {
+  
+  height: calc(100% - 70px);
+  width: 100%;
+
+  padding-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p#suche-info {
+  
+  margin: 0px;
+  padding: 0px;
+
+  margin-bottom: 10px;
+
+  color: #b9c0c3;
+}
+
+.suche-ergebnis {
+  
+  height: 120px;
+  min-height: 120px;
+  width: 70%;
+  max-width: 500px;
+  background-color: #CCD3D7;
+   
+  box-sizing: border-box; 
+  margin-bottom: 25px;
+  padding: 10px;
+  overflow: hidden;
+  
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.suche-ergebnis-bild {
+  
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  
+  background-color: white;
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+  
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+.suche-ergebnis-bild-bild {
+  
+  height: 100px;
+  width: auto;
+}
+
+.suche-ergebnis-daten {
+  
+  height: 100%;
+  width: 260px;
+  min-width: 260px;
+
+  margin-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.suche-ergebnis-daten-name {
+
+  white-space: nowrap;
+}
+
+.suche-ergebnis-daten-name > a{
+
+  text-decoration: none;
+  color: black;
+}
+
+.suche-ergebnis-daten-freunde {
+
+  white-space: nowrap;
+}
+
+.suche-ergebnis-daten-login {
+
+  white-space: nowrap;
+
+  color: gray;
+  font-size: 14px;
+}
+
+.suche-ergebnis-icon {
+
+  height: 100px;
+  width: auto;
+}

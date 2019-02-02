@@ -1,0 +1,112 @@
+DROP DATABASE IF EXISTS afonsoweihrauchdb;
+CREATE DATABASE afonsoweihrauchdb;
+USE `afonsoweihrauchdb`;
+
+
+--
+-- Datenbank: `afonsoweihrauchdb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `benutzer`
+--
+
+CREATE TABLE `benutzer` (
+  `benutzername` varchar(30) NOT NULL,
+  `passwort` varchar(30) NOT NULL,
+  `vorname` varchar(30) NOT NULL,
+  `nachname` varchar(30) NOT NULL,
+  `geburtsdatum` date DEFAULT NULL,
+  `login` timestamp NULL DEFAULT NULL,
+  `profilbild` blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Daten für Tabelle `benutzer`
+--
+
+INSERT INTO `benutzer` (`benutzername`, `passwort`, `vorname`, `nachname`, `geburtsdatum`, `login`, `profilbild`) VALUES
+('b1', 'p1', 'Kevin', 'Meier', '1992-02-29', '2018-03-04 13:05:07', ''),
+('b2', 'p2', 'Kevin', 'Meier', '1992-02-29', '2018-03-04 13:00:23', ''),
+('b3', 'p3', 'Ingo', 'Meyer', NULL, NULL, ''),
+('b4', 'p4', 'Ingeborg', 'Meyer', NULL, NULL, ''),
+('b5', 'p5', 'Ingeborg', 'Mayer', NULL, '2018-03-04 13:03:31', ''),
+('b6', 'p6', 'Ingemar', 'Meyer', NULL, NULL, ''),
+('b7', 'p7', 'Ingo', 'Mayer', NULL, '2018-02-26 16:50:00', '');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `freunde`
+--
+
+CREATE TABLE `freunde` (
+  `benutzername1` varchar(30) NOT NULL,
+  `benutzername2` varchar(30) NOT NULL,
+  `bestaetigt` tinyint(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Daten für Tabelle `freunde`
+--
+
+INSERT INTO `freunde` (`benutzername1`, `benutzername2`, `bestaetigt`) VALUES
+('b1', 'b2', 1),
+('b1', 'b4', 1),
+('b1', 'b5', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `status`
+--
+
+CREATE TABLE `status` (
+  `s_ID` int(11) NOT NULL,
+  `benutzername` varchar(30) NOT NULL,
+  `text` varchar(160) NOT NULL,
+  `uhrzeit` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Daten für Tabelle `status`
+--
+
+INSERT INTO `status` (`s_ID`, `benutzername`, `text`, `uhrzeit`) VALUES
+(1, 'b1', 'Status 1', '2018-03-04 15:20:05'),
+(2, 'b1', 'Status 2', '2018-03-04 15:20:15');
+
+--
+-- Indizes der exportierten Tabellen
+--
+
+--
+-- Indizes für die Tabelle `benutzer`
+--
+ALTER TABLE `benutzer`
+  ADD PRIMARY KEY (`benutzername`);
+
+--
+-- Indizes für die Tabelle `freunde`
+--
+ALTER TABLE `freunde`
+  ADD PRIMARY KEY (`benutzername1`,`benutzername2`);
+
+--
+-- Indizes für die Tabelle `status`
+--
+ALTER TABLE `status`
+  ADD PRIMARY KEY (`s_ID`);
+
+--
+-- AUTO_INCREMENT für exportierte Tabellen
+--
+
+--
+-- AUTO_INCREMENT für Tabelle `status`
+--
+ALTER TABLE `status`
+  MODIFY `s_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;COMMIT;
+  

@@ -1,0 +1,250 @@
+body, html {
+
+	height: 100%;
+	overflow: hidden;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+div#background {
+
+	height: 100%;
+
+	background-image: url("../bilder/login-background.png");
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div#login {
+
+	background-color: white;
+	height: 450px;
+	width: 450px;
+
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+div#registration {
+
+	background-color: white;
+	height: 600px;
+	width: 450px;
+
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+div#logo {
+ 
+	height: 30%;
+
+	margin: 3%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div#logo > img {
+	
+	height: 65%;
+	width: auto;
+}
+
+div#logo2 {
+ 
+	height: 15%;
+
+	margin: 3%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div#logo2 > img {
+
+	width: 70%;
+	height: auto;
+}
+
+
+div#login-info {
+
+	background-color: #2C3E50;
+	height: 75%;
+	width: 95%;
+
+	margin: 3%;
+	margin-top: 0;
+
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div#registration-info{
+
+	background-color: #2C3E50;
+	height: 85%;
+	width: 95%;
+
+	margin: 3%;
+	margin-top: 0;
+
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form#login-form
+{	
+	height: 100%;
+	padding: 25px;
+	box-sizing: border-box;
+	
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+form#registration-form
+{	
+	height: 100%;
+	padding: 25px;
+	padding-left: 90px;
+	padding-right: 90px;
+	box-sizing: border-box;
+	
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+div#geburtstag
+{
+	height: 30px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+p
+{
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+.input{
+	height: 30px;
+	width: 100%;
+	border: none;
+	border-radius: 2px;
+	
+	box-sizing: border-box;
+	padding: 2px;
+	padding-left: 5px;
+
+	background-color: #dedede;
+}
+
+.rot
+{
+	height: 30px;
+	width: 100%;
+	border: none;
+	border-radius: 2px;
+	
+	box-sizing: border-box;
+	padding: 2px;
+	padding-left: 5px;
+
+	background-color: #dedede;
+}
+
+.rot::placeholder
+{
+	color: red;
+}
+
+.input-geburtstag{
+	height: 100%;
+	width: 27%;
+	border: none;
+	border-radius: 2px;
+	
+	box-sizing: border-box;
+	padding: 2px;
+	padding-left: 5px;
+
+	background-color: #dedede;
+}
+
+input[type="checkbox"]
+{
+	align-self: left;
+} 
+
+span#checkbox-text
+{
+	color: white;
+}
+
+button
+{
+	height: 35px;
+	width: 100%;
+	border-radius: 2px;	
+	background-color: #1C8ADB;
+	border: none;
+	color: #ffffff;
+
+	box-shadow: 0 5px #115383;
+}
+
+button:hover
+{
+	background-color: #1573b7;
+}
+
+button:active
+{
+	transform: translateY(2px);
+	box-shadow: 0 3px #115383;
+}
+
+a#registrieren, a#login
+{
+	color: #1C8ADB;
+	text-decoration: none;
+}
+
+a#registrieren:hover, a#login:hover
+{
+	text-decoration: underline;
+}
+
+a#registrieren:active, a#login:active
+{
+	color: #ffffff;
+}
