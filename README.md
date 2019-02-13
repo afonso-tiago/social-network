@@ -1,6 +1,6 @@
 # social-network
 
-Bei diesem Projekt handelt es sich um ein Schulprojekt, welches ich im ersten Halbjahr der 13. Klasse ausgearbeitet habe. Die Aufgabe war es ein soziales Netzwerk mit charakteristischen Funktionen, wie zum Beispiel: Freunde hinzufügen, Staus posten oder nach anderen Nutzern suchen, zu programmieren.  
+Bei diesem Projekt handelt es sich um ein Schulprojekt, welches ich im ersten Halbjahr der 13. Klasse ausgearbeitet habe. Die Aufgabe war es, ein soziales Netzwerk mit charakteristischen Funktionen zu programmieren. Wie zum Beispiel: Freunde hinzufügen, einen Staus posten oder nach anderen Nutzern suchen.  
 
 - Zeitaufwand: (etwa) 2 Monate
 - Verwendete Technologien: php, html, css, mysql
